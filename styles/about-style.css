@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+    background: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar h3{
+    color: #fff;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.nav-links{
+    flex: 1;
+    display: inline-block;
+}
+.nav-links li{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.btn{
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    width: 100px;
+    color: #fff;
+    padding: 2px 3px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 60px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border: 1px solid orangered;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: orangered;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 580px;
+    background-image: url(../images/muscular-sportsman-building-biceps-with-dumbbell.jpg);
+    background-size: cover;
+}
+
+.banner-info{
+    width: 40%;
+    padding: 100px 100px;
+    color: #fff;
+}
+
+.banner-info h1{
+    font-size: 80px;
+    margin-bottom: 8px;
+}
+
+.banner-info h1 span{
+    color: orangered;
+}
+
+.banner-info p{
+    line-height: 23px;
+}
+
+button{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 10px ;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+button:hover{
+    background: orangered;
+    border: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: auto;
+
+}
+
+.main-container h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-1{
+    width: 1200px;
+    margin: 80px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 150px;
+}
+
+.col-2 img{
+    width: 70%;
+    border-radius: 30px;
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+
+.col-2 img:hover{
+    filter: grayscale(0%);
+    box-shadow: 0,0,20px, 0  rgba(0,0,0,0.4);
+}
+
+.col-2 .first-img{
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.story{
+    padding: 20px;
+}
+.story p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.tag-line{
+    margin: 70px 0;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.tag-line span{
+    color: orangered;
+}
+
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    max-width: 100%;
+
+}
+
+.testimonial{
+    margin-bottom: 30px ;
+}
+
+.testimonial .col-3 {
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+.fas.fa-quote-left{
+    color: #ff523b;
+    font-size: 32px;
+}
+.fas.fa-quote-right{
+    color: #ff523b;
+    font-size: 32px;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3{
+    color: #555;
+    font-size: 16;
+    font-weight: 600;
+}
+
+.small-container h1{
+    margin-bottom: 40px ;
+    text-align: center;
+}
+
+/* footer */
+.footer{
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+.footer-content{
+    padding: 30px 50px 30px;
+    align-items: center;
+}
+
+.social-links{
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 30px;
+}
+a{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: orangered;
+}
+
+
+
+
+
+
