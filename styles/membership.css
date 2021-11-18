@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+    background: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar h3{
+    color: #fff;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.nav-links{
+    flex: 1;
+    display: inline-block;
+}
+.nav-links li{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.btn{
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    width: 100px;
+    color: #fff;
+    padding: 2px 3px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 60px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border: 1px solid orangered;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: orangered;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/muscular-sportsman-building-biceps-with-dumbbell.jpg);
+    background-size: cover;
+}
+
+.banner-info{
+    width: 40%;
+    padding: 100px 100px;
+    color: #fff;
+}
+
+.banner-info h1{
+    font-size: 80px;
+    margin-bottom: 8px;
+}
+
+.banner-info h1 span{
+    color: orangered;
+}
+
+.banner-info p{
+    line-height: 23px;
+}
+
+button{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 10px ;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 1s;
+    margin-left: 10px;
+}
+
+button:hover{
+    background: orangered;
+    border: none;
+}
+
+/* main content */
+.main-content{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 1200px;
+}
+
+.quote{
+    text-align: center;
+    color: #555;
+    text-transform: capitalize;
+    margin: 20px 0 20px 0;
+}
+
+.quote span{
+    color: orangered;
+}
+
+.fa-quote-right, .fa-quote-left{
+    color: orangered;
+}
+
+.main-content h2{
+    font-size: 30px;
+    color: #222;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main-content h2::after{
+    content: '';
+    background: orangered;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.card-content{
+    width: 100px;
+    height: 550px;
+    padding: 5px;
+    left: 50px;
+    position: relative;
+    margin: auto;
+    color: #fff;
+}
+
+
+.first-card{
+    width: 300px;
+    height: 475px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 120px;
+    background: #555;
+    padding: 20px 0;
+    background: linear-gradient(#E6DADA, #274046);
+    box-shadow: 0 0 50px #ccc;
+    transition: 0.7s ease-in-out;
+}
+
+.first-card:hover{
+    transform: translate(-60%,-60%);
+    background: linear-gradient(#4b6cb7,#182848);
+    box-shadow: 12px 12px 12px -4px lightblue;
+}
+
+.design{
+    width: 230px;
+    height: 100px;
+    background-image:url(../images/luis-vidal-FodEsaNZs48-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 50px 50px 0 ;
+    position: relative;
+    top: 20px;
+    padding: 20px;
+    text-align: center;
+    z-index: -1;
+    color: #fff;
+}
+
+.design-main{
+    width: 230px;
+    height: 120px;
+    background: orangered;
+    border-radius: 0 70px 70px 0 ;
+    background-image:url(../images/luis-vidal-FodEsaNZs48-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    z-index: -1;
+}
+
+.design-main h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.design-main h4{
+    font-weight: 500;
+}
+
+.design h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.design h4{
+    font-weight: 500;
+}
+
+.offers{
+    padding: 35px;
+    display: block;
+}
+
+.offers li{
+    margin-bottom: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.second-card{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    background: #555;
+    padding: 30px 0;
+    background: linear-gradient(#5f5c5c,#cbad6d);
+    box-shadow: 0 0 50px #ccc;    
+    transition: 0.7s ease-in-out;
+}
+
+.second-card:hover{
+    background: linear-gradient(#0ABFBC,#FC354C);
+    transform: translate(-60%,-60%);
+    box-shadow: 12px 12px 12px -4px lightblue;
+}
+
+.third-card{
+    width: 300px;
+    height: 475px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 330px;
+    top: 50%;
+    background: #555;
+    padding: 20px 0 ;
+    background: linear-gradient(#B993D6, #8CA6DB);
+    box-shadow: 0 0 50px #ccc;
+    transition: 0.7s ease-in-out;
+}
+
+.third-card:hover{
+    transform: translate(-65%,-65%);
+    box-shadow: 12px 12px 12px -4px lightblue;
+    background: linear-gradient(#C04848,#480048);
+}
