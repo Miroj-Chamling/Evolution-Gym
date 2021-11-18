@@ -191,7 +191,7 @@ button:hover{
 .first-card:hover{
     transform: translate(-60%,-60%);
     background: linear-gradient(#4b6cb7,#182848);
-    box-shadow: 12px 12px 12px -4px lightblue;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .design{
@@ -270,7 +270,7 @@ button:hover{
 .second-card:hover{
     background: linear-gradient(#0ABFBC,#FC354C);
     transform: translate(-60%,-60%);
-    box-shadow: 12px 12px 12px -4px lightblue;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .third-card{
@@ -289,6 +289,6 @@ button:hover{
 
 .third-card:hover{
     transform: translate(-65%,-65%);
-    box-shadow: 12px 12px 12px -4px lightblue;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     background: linear-gradient(#C04848,#480048);
 }
